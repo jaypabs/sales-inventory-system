@@ -1,0 +1,35 @@
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmDBPath.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmLogin.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.mdiMain.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.Resources.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS And Inventory System.vbproj.GenerateResource.Cache
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\bin\Debug\Data.accdb
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\bin\Debug\POS And Inventory System.exe.config
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\bin\Debug\POS And Inventory System.exe
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\bin\Debug\POS And Inventory System.pdb
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\bin\Debug\POS And Inventory System.xml
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS And Inventory System.exe
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS And Inventory System.xml
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS And Inventory System.pdb
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\bin\Debug\data.xml
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmEmployee.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmEmployeeList.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmCustomer.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmCustomerList.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmSupplier.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmSupplierList.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmBrand.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmCategory.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmUnit.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.Form1.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmProduct.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmProductList.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmPurchaseOrder.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmSalesOrderList.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmSalesOrder.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmPurchaseOrderList.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmProductLookup.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmSales.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmAddCustomer.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmPay.resources
+D:\Projects\Thesis\UNO-R Point of Sale\POS And Inventory System\POS And Inventory System\obj\x86\Debug\POS_And_Inventory_System.frmSalesHistory.resources

@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31938B77-0C9A-4041-8A07-B532814D9A83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sales_And_Inventory_System.My.MyApplication</StartupObject>
+    <RootNamespace>Sales_And_Inventory_System</RootNamespace>
+    <AssemblyName>Sales And Inventory System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sales And Inventory System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sales And Inventory System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datasets\BrandDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BrandDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\CategoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Settings.vb" />
+    <Compile Include="Datasets\CustomerDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\CustomerLookupDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerLookupDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\EmployeeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\SalesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddCustomer.Designer.vb">
+      <DependentUpon>frmAddCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBrand.Designer.vb">
+      <DependentUpon>frmBrand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBrand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCategory.Designer.vb">
+      <DependentUpon>frmCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomerList.Designer.vb">
+      <DependentUpon>frmCustomerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCustomerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDBPath.Designer.vb">
+      <DependentUpon>frmDBPath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDBPath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployee.Designer.vb">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeList.Designer.vb">
+      <DependentUpon>frmEmployeeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoice.Designer.vb">
+      <DependentUpon>frmInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceHistory.Designer.vb">
+      <DependentUpon>frmInvoiceHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPay.Designer.vb">
+      <DependentUpon>frmPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPOLookup.Designer.vb">
+      <DependentUpon>frmPOLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPOLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProduct.Designer.vb">
+      <DependentUpon>frmProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductList.Designer.vb">
+      <DependentUpon>frmProductList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductLookup.Designer.vb">
+      <DependentUpon>frmProductLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductReceive.Designer.vb">
+      <DependentUpon>frmProductReceive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductReceive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductReceiveHistory.Designer.vb">
+      <DependentUpon>frmProductReceiveHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductReceiveHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPurchaseOrder.Designer.vb">
+      <DependentUpon>frmPurchaseOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPurchaseOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPurchaseOrderList.Designer.vb">
+      <DependentUpon>frmPurchaseOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPurchaseOrderList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalesHistory.Designer.vb">
+      <DependentUpon>frmSalesHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalesHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalesOrderList.Designer.vb">
+      <DependentUpon>frmSalesOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalesOrderList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSOLookup.Designer.vb">
+      <DependentUpon>frmSOLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSOLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStoreInventory.Designer.vb">
+      <DependentUpon>frmStoreInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStoreInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSupplier.Designer.vb">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSupplierList.Designer.vb">
+      <DependentUpon>frmSupplierList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSupplierList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUnit.Designer.vb">
+      <DependentUpon>frmUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\mdiMain.Designer.vb">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\mdiMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalesOrder.Designer.vb">
+      <DependentUpon>frmSalesOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalesOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datasets\ItemTypeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemTypeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSales.Designer.vb">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datasets\InvoiceDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\modADO.vb" />
+    <Compile Include="Modules\modFunction.vb" />
+    <Compile Include="Modules\modGlobal.vb" />
+    <Compile Include="Modules\modProcedure.vb" />
+    <Compile Include="Modules\modPublicVar.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Datasets\UsersDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ProductDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ProductLookupDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductLookupDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\PurchaseOrderDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseOrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\SalesOrderDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesOrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ProductReceiveDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductReceiveDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ProductReceiveDataSet.vb">
+      <DependentUpon>ProductReceiveDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\SalesReportDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Datasets\SupplierDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupplierDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\UnitDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StoreInventoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\SalesReport.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBrand.resx">
+      <DependentUpon>frmBrand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCategory.resx">
+      <DependentUpon>frmCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomerList.resx">
+      <DependentUpon>frmCustomerList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDBPath.resx">
+      <DependentUpon>frmDBPath.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployee.resx">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeeList.resx">
+      <DependentUpon>frmEmployeeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoice.resx">
+      <DependentUpon>frmInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoiceHistory.resx">
+      <DependentUpon>frmInvoiceHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPay.resx">
+      <DependentUpon>frmPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPOLookup.resx">
+      <DependentUpon>frmPOLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProduct.resx">
+      <DependentUpon>frmProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductList.resx">
+      <DependentUpon>frmProductList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductLookup.resx">
+      <DependentUpon>frmProductLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductReceive.resx">
+      <DependentUpon>frmProductReceive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductReceiveHistory.resx">
+      <DependentUpon>frmProductReceiveHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPurchaseOrderList.resx">
+      <DependentUpon>frmPurchaseOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSalesHistory.resx">
+      <DependentUpon>frmSalesHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSalesOrderList.resx">
+      <DependentUpon>frmSalesOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSOLookup.resx">
+      <DependentUpon>frmSOLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStoreInventory.resx">
+      <DependentUpon>frmStoreInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSupplier.resx">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSupplierList.resx">
+      <DependentUpon>frmSupplierList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUnit.resx">
+      <DependentUpon>frmUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\mdiMain.resx">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSalesOrder.resx">
+      <DependentUpon>frmSalesOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSales.resx">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Datasets\BrandDataSet.xsc">
+      <DependentUpon>BrandDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\BrandDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BrandDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\BrandDataSet.xss">
+      <DependentUpon>BrandDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CategoryDataSet.xsc">
+      <DependentUpon>CategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CategoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\CategoryDataSet.xss">
+      <DependentUpon>CategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CustomerDataSet.xsc">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CustomerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\CustomerDataSet.xss">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CustomerLookupDataSet.xsc">
+      <DependentUpon>CustomerLookupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CustomerLookupDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerLookupDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\CustomerLookupDataSet.xss">
+      <DependentUpon>CustomerLookupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\EmployeeDataSet.xsc">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\EmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\EmployeeDataSet.xss">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ItemTypeDataSet.xsc">
+      <DependentUpon>ItemTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ItemTypeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemTypeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ItemTypeDataSet.xss">
+      <DependentUpon>ItemTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SalesDataSet.xsc">
+      <DependentUpon>SalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SalesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\SalesDataSet.xss">
+      <DependentUpon>SalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\InvoiceDataSet.xsc">
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\InvoiceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\InvoiceDataSet.xss">
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\UsersDataSet.xsc">
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UsersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\UsersDataSet.xss">
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ProductDataSet.xsc">
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ProductDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ProductDataSet.xss">
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ProductLookupDataSet.xsc">
+      <DependentUpon>ProductLookupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ProductLookupDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductLookupDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ProductLookupDataSet.xss">
+      <DependentUpon>ProductLookupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\PurchaseOrderDataSet.xsc">
+      <DependentUpon>PurchaseOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\PurchaseOrderDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseOrderDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\PurchaseOrderDataSet.xss">
+      <DependentUpon>PurchaseOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SalesOrderDataSet.xsc">
+      <DependentUpon>SalesOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SalesOrderDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesOrderDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\SalesOrderDataSet.xss">
+      <DependentUpon>SalesOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SupplierDataSet.xsc">
+      <DependentUpon>SupplierDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SupplierDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupplierDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\SupplierDataSet.xss">
+      <DependentUpon>SupplierDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UnitDataSet.xsc">
+      <DependentUpon>UnitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UnitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\UnitDataSet.xss">
+      <DependentUpon>UnitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SalesReportDataSet.xsc">
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SalesReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesReportDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\SalesReportDataSet.xss">
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StoreInventoryDataSet.xsc">
+      <DependentUpon>StoreInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StoreInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StoreInventoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StoreInventoryDataSet.xss">
+      <DependentUpon>StoreInventoryDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Datasets\ProductReceiveDataSet.xsc">
+      <DependentUpon>ProductReceiveDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ProductReceiveDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductReceiveDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ProductReceiveDataSet.xss">
+      <DependentUpon>ProductReceiveDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\sales.png" />
+    <None Include="Resources\purchase_order.png" />
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

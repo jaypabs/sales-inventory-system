@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProductLookupDataSet" targetNamespace="http://tempuri.org/ProductLookupDataSet.xsd" xmlns:mstns="http://tempuri.org/ProductLookupDataSet.xsd" xmlns="http://tempuri.org/ProductLookupDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DataConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataConnectionString (MySettings)" PropertyReference="ApplicationSettings.Sales_And_Inventory_System.My.MySettings.GlobalReference.Default.DataConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qry_ProductLookupTableAdapter" GeneratorDataComponentClassName="qry_ProductLookupTableAdapter" Name="qry_ProductLookup" UserDataComponentName="qry_ProductLookupTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DataConnectionString (MySettings)" DbObjectName="qry_ProductLookup" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductDetailID, ProductName, Description, Category, Brand, UOM, QtyOnhand, SellingPrice, SupplierPrice, UnitID FROM qry_ProductLookup</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductDetailID" DataSetColumn="ProductDetailID" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="Brand" DataSetColumn="Brand" />
+              <Mapping SourceColumn="UOM" DataSetColumn="UOM" />
+              <Mapping SourceColumn="QtyOnhand" DataSetColumn="QtyOnhand" />
+              <Mapping SourceColumn="SellingPrice" DataSetColumn="SellingPrice" />
+              <Mapping SourceColumn="UnitID" DataSetColumn="UnitID" />
+              <Mapping SourceColumn="SupplierPrice" DataSetColumn="SupplierPrice" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProductLookupDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProductLookupDataSet" msprop:Generator_UserDSName="ProductLookupDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qry_ProductLookup" msprop:Generator_TableClassName="qry_ProductLookupDataTable" msprop:Generator_TableVarName="tableqry_ProductLookup" msprop:Generator_TablePropName="qry_ProductLookup" msprop:Generator_RowDeletingName="qry_ProductLookupRowDeleting" msprop:Generator_RowChangingName="qry_ProductLookupRowChanging" msprop:Generator_RowEvHandlerName="qry_ProductLookupRowChangeEventHandler" msprop:Generator_RowDeletedName="qry_ProductLookupRowDeleted" msprop:Generator_UserTableName="qry_ProductLookup" msprop:Generator_RowChangedName="qry_ProductLookupRowChanged" msprop:Generator_RowEvArgName="qry_ProductLookupRowChangeEvent" msprop:Generator_RowClassName="qry_ProductLookupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductDetailID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnProductDetailID" msprop:Generator_ColumnPropNameInRow="ProductDetailID" msprop:Generator_ColumnPropNameInTable="ProductDetailIDColumn" msprop:Generator_UserColumnName="ProductDetailID" type="xs:int" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Brand" msprop:Generator_ColumnVarNameInTable="columnBrand" msprop:Generator_ColumnPropNameInRow="Brand" msprop:Generator_ColumnPropNameInTable="BrandColumn" msprop:Generator_UserColumnName="Brand" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" msprop:Generator_UserColumnName="UOM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QtyOnhand" msprop:Generator_ColumnVarNameInTable="columnQtyOnhand" msprop:Generator_ColumnPropNameInRow="QtyOnhand" msprop:Generator_ColumnPropNameInTable="QtyOnhandColumn" msprop:Generator_UserColumnName="QtyOnhand" type="xs:int" minOccurs="0" />
+              <xs:element name="SellingPrice" msprop:Generator_ColumnVarNameInTable="columnSellingPrice" msprop:Generator_ColumnPropNameInRow="SellingPrice" msprop:Generator_ColumnPropNameInTable="SellingPriceColumn" msprop:Generator_UserColumnName="SellingPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" msprop:Generator_UserColumnName="UnitID" type="xs:int" minOccurs="0" />
+              <xs:element name="SupplierPrice" msprop:Generator_ColumnVarNameInTable="columnSupplierPrice" msprop:Generator_ColumnPropNameInRow="SupplierPrice" msprop:Generator_ColumnPropNameInTable="SupplierPriceColumn" msprop:Generator_UserColumnName="SupplierPrice" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

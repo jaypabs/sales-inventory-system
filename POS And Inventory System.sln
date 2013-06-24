@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sales And Inventory System", "POS And Inventory System\Sales And Inventory System.vbproj", "{31938B77-0C9A-4041-8A07-B532814D9A83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31938B77-0C9A-4041-8A07-B532814D9A83}.Debug|x86.ActiveCfg = Debug|x86
+		{31938B77-0C9A-4041-8A07-B532814D9A83}.Debug|x86.Build.0 = Debug|x86
+		{31938B77-0C9A-4041-8A07-B532814D9A83}.Release|x86.ActiveCfg = Release|x86
+		{31938B77-0C9A-4041-8A07-B532814D9A83}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

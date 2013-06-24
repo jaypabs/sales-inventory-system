@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CustomerLookupDataSet" targetNamespace="http://tempuri.org/CustomerLookupDataSet.xsd" xmlns:mstns="http://tempuri.org/CustomerLookupDataSet.xsd" xmlns="http://tempuri.org/CustomerLookupDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DataConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataConnectionString (MySettings)" PropertyReference="ApplicationSettings.Sales_And_Inventory_System.My.MySettings.GlobalReference.Default.DataConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qry_CustomerLookupTableAdapter" GeneratorDataComponentClassName="qry_CustomerLookupTableAdapter" Name="qry_CustomerLookup" UserDataComponentName="qry_CustomerLookupTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DataConnectionString (MySettings)" DbObjectName="qry_CustomerLookup" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CustomerID, Name FROM qry_CustomerLookup</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CustomerID" DataSetColumn="CustomerID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CustomerLookupDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CustomerLookupDataSet" msprop:Generator_UserDSName="CustomerLookupDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qry_CustomerLookup" msprop:Generator_TableClassName="qry_CustomerLookupDataTable" msprop:Generator_TableVarName="tableqry_CustomerLookup" msprop:Generator_RowChangedName="qry_CustomerLookupRowChanged" msprop:Generator_TablePropName="qry_CustomerLookup" msprop:Generator_RowDeletingName="qry_CustomerLookupRowDeleting" msprop:Generator_RowChangingName="qry_CustomerLookupRowChanging" msprop:Generator_RowEvHandlerName="qry_CustomerLookupRowChangeEventHandler" msprop:Generator_RowDeletedName="qry_CustomerLookupRowDeleted" msprop:Generator_RowClassName="qry_CustomerLookupRow" msprop:Generator_UserTableName="qry_CustomerLookup" msprop:Generator_RowEvArgName="qry_CustomerLookupRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" type="xs:int" />
+              <xs:element name="Name" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:qry_CustomerLookup" />
+      <xs:field xpath="mstns:CustomerID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

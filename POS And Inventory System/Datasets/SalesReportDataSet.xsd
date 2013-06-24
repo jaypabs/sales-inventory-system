@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SalesReportDataSet" targetNamespace="http://tempuri.org/SalesReportDataSet.xsd" xmlns:mstns="http://tempuri.org/SalesReportDataSet.xsd" xmlns="http://tempuri.org/SalesReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DataConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataConnectionString (MySettings)" PropertyReference="ApplicationSettings.Sales_And_Inventory_System.My.MySettings.GlobalReference.Default.DataConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qry_SalesReportTableAdapter" GeneratorDataComponentClassName="qry_SalesReportTableAdapter" Name="qry_SalesReport" UserDataComponentName="qry_SalesReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DataConnectionString (MySettings)" DbObjectName="qry_SalesReport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SalesID, [Date], ProductName, Qty, SellingPrice, DiscountAmount, Amount FROM qry_SalesReport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SalesID" DataSetColumn="SalesID" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="SellingPrice" DataSetColumn="SellingPrice" />
+              <Mapping SourceColumn="DiscountAmount" DataSetColumn="DiscountAmount" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SalesReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SalesReportDataSet" msprop:Generator_UserDSName="SalesReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qry_SalesReport" msprop:Generator_TableClassName="qry_SalesReportDataTable" msprop:Generator_TableVarName="tableqry_SalesReport" msprop:Generator_TablePropName="qry_SalesReport" msprop:Generator_RowDeletingName="qry_SalesReportRowDeleting" msprop:Generator_RowChangingName="qry_SalesReportRowChanging" msprop:Generator_RowEvHandlerName="qry_SalesReportRowChangeEventHandler" msprop:Generator_RowDeletedName="qry_SalesReportRowDeleted" msprop:Generator_UserTableName="qry_SalesReport" msprop:Generator_RowChangedName="qry_SalesReportRowChanged" msprop:Generator_RowEvArgName="qry_SalesReportRowChangeEvent" msprop:Generator_RowClassName="qry_SalesReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnSalesID" msprop:Generator_ColumnPropNameInRow="SalesID" msprop:Generator_ColumnPropNameInTable="SalesIDColumn" msprop:Generator_UserColumnName="SalesID" type="xs:int" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="SellingPrice" msprop:Generator_ColumnVarNameInTable="columnSellingPrice" msprop:Generator_ColumnPropNameInRow="SellingPrice" msprop:Generator_ColumnPropNameInTable="SellingPriceColumn" msprop:Generator_UserColumnName="SellingPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DiscountAmount" msprop:Generator_ColumnVarNameInTable="columnDiscountAmount" msprop:Generator_ColumnPropNameInRow="DiscountAmount" msprop:Generator_ColumnPropNameInTable="DiscountAmountColumn" msprop:Generator_UserColumnName="DiscountAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
