@@ -1,5 +1,5 @@
-sales-inventory-system
-======================
+Sales And Inventory System
+===========================
 
 Sales and Inventory System aim to help small businesses in managing day-to-day transaction. The primary purpose of this project is to help store owners to keep track of the customers, products, suppliers and most specially the sales transactions.
 
